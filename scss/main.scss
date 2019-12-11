@@ -1,9 +1,12 @@
-$primary-color: rgb(113, 170, 197);
+$primary-color: rgb(16, 33, 34);
+
+$secondary-color: #1add9c;
 
 * {
   box-sizing: border-box;
 }
 
+// Body styles
 body {
   background: $primary-color;
   color: rgb(238, 229, 229);
@@ -22,5 +25,50 @@ h3 {
 
   &.lg-heading {
     font-size: 2rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+// All anchor tags
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+// header
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+// text color on last name
+.text-secondary {
+  color: $secondary-color;
+}
+
+// main section
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
   }
 }
