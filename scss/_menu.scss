@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #542344;
+        background: #98a5ca;
         color: $secondary-color;
         @include easeOut;
     }
@@ -93,8 +93,8 @@
         }
 
         .portrait {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             background: url(../img/greg_small.jpg);
             border-radius: 50%;
             border: solid 3px $secondary-color;
@@ -109,6 +109,27 @@
         &.show {
             // Slide in from right
             transform: translate3d(0, 0, 0);
+        }
+
+        &.current>a {
+            color: $secondary-color;
+        }
+    }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-style: italic;
+        // font-size: 19px;
+        padding: 1rem, 0;
+        font-weight: 300;
+        color: #ffffff;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+            font-style: oblique;
         }
     }
 }
