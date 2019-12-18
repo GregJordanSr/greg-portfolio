@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -33,7 +34,7 @@ h3 {
 
     &.back {
       background: rgba(lighten($primary-color, 8), 0.4);
-      
+
     }
   }
 }
