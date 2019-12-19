@@ -1,6 +1,6 @@
 //  Sass variables
-$primary-color: rgb(7, 39, 77);
-$secondary-color: #a7cce794;
+$primary-color: rgb(8, 40, 80);
+$secondary-color: #bbb9ccc2;
 $show-home-image: true;
 $home-background: url(../img/background1.jpg);
 $background-opacity: 0.8;
@@ -32,7 +32,13 @@ $background-opacity: 0.8;
 }
 
 // Text Color
-
+@function text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000000;
+    } @else {
+        @return #ffffff;
+    }
+}
 
 // Media Queries
 @mixin smallScreen {

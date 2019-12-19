@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #98a5ca;
+        background: text-color($primary-color);
         color: $secondary-color;
         @include easeOut;
     }
@@ -123,7 +123,7 @@
         // font-size: 19px;
         padding: 1rem, 0;
         font-weight: 300;
-        color: #ffffff;
+        color: #text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
