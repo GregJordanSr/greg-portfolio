@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -11,10 +10,16 @@ body {
   @include background;
   background: $primary-color;
   color: text-color($primary-color);
-  height: 100%;
+  min-height: calc(100vh - 60px);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+}
+
+.main-text {
+  text-align: center;
+  align-items: center;
+
 }
 
 // Headings
@@ -29,7 +34,7 @@ h3 {
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 1rem;
 
     &.back {
@@ -86,3 +91,53 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    'bioimage bio bio'
+    's-1 s-2 s-3';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+  color: text-color($primary-color)
+}
+
+.s-1 {
+  grid-area: s-1;
+}
+
+.s-2 {
+  grid-area: s-2;
+}
+
+.s-3 {
+  grid-area: s-3;
+}
+
+.section {
+  background: darken($primary-color, 4);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 4px solid;
+}
+
+#main-footer {
+  text-align: center;
+  padding: .5rem;
+  background: darken($primary-color, 4);
+  color: text-color($primary-color);
+  height: 60px;
+}
+
+@import "mobile";

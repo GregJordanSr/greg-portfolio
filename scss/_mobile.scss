@@ -40,9 +40,18 @@
 
         .portrait {
             background: url(../img/greg3.jpg);
+            border-radius: 50%;
             width: 150px;
             height: 150px;
         }
+    }
+
+    .about-info {
+        grid-template-areas:
+            "bioimage"
+            "bio""bio"
+            "s-1""s-2""s-3";
+        grid-template-columns: 1fr;
     }
 }
 

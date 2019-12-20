@@ -120,6 +120,10 @@ body {
       z-index: -1;
       background: rgba(8, 40, 80, 0.8); }
 
+.main-text {
+  text-align: center;
+  align-items: center; }
+
 h1,
 h2,
 h3 {
@@ -132,7 +136,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 1rem; }
     h1.sm-heading.back,
     h2.sm-heading.back,
