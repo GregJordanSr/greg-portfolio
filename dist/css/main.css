@@ -199,7 +199,7 @@ main {
 .section {
   background: #061f3d;
   padding: 0.5rem;
-  border-bottom: #bbb9ccc2 4px solid; }
+  border: #bbb9ccc2 4px solid; }
 
 #main-footer {
   text-align: center;

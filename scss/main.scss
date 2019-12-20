@@ -129,8 +129,10 @@ main {
 .section {
   background: darken($primary-color, 4);
   padding: 0.5rem;
-  border-bottom: $secondary-color 4px solid;
-  border-top: $secondary-color 4px solid;
+  // border-bottom: $secondary-color 4px solid;
+  // border-top: $secondary-color 4px solid;
+  // border-left: $secondary-color 4px solid;
+  border: $secondary-color 4px solid;
 }
 
 #main-footer {
