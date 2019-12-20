@@ -1,0 +1,63 @@
+// Widescreen
+@include xlgScreen {}
+
+// desktop/laptop 
+@include lgScreen {}
+
+// Tabs & small laptops
+@include medScreen {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .lg-heading {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ul.menu-nav,
+    div.menu-branding {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .menu-nav {
+        height: 75vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+        opacity: 0.9;
+    }
+
+    .menu-branding {
+        height: 25vh;
+        transform: translate3d(100%, 0, 0);
+
+        .portrait {
+            background: url(../img/greg3.jpg);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .about-info {
+        grid-template-areas:
+            "bioimage"
+            "bio""bio"
+            "s-1""s-2""s-3";
+        grid-template-columns: 1fr;
+    }
+}
+
+// smartphones 
+@include smallScreen {
+    main#home h1 {
+        margin-top: 10vh;
+    }
+}
