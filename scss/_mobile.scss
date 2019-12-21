@@ -45,12 +45,15 @@
             height: 150px;
         }
     }
-
+    // CSS Grid
     .about-info {
         grid-template-areas:
             "bioimage"
-            "bio""bio"
-            "s-1""s-2""s-3";
+            "bio"
+            "bio"
+            "s-1"
+            "s-2"
+            "s-3";
         grid-template-columns: 1fr;
     }
 }

@@ -51,7 +51,7 @@ a {
   text-decoration: none;
 }
 
-// header
+// Header
 
 header {
   position: fixed;
@@ -59,12 +59,12 @@ header {
   width: 100%;
 }
 
-// text color on last name
+// Text color on last name
 .text-secondary {
   color: $secondary-color;
 }
 
-// main section
+// Main section on each page
 
 main {
   padding: 4rem;
@@ -91,6 +91,8 @@ main {
     }
   }
 }
+
+// CSS Grid layout
 
 .about-info {
   display: grid;
@@ -125,16 +127,14 @@ main {
 .s-3 {
   grid-area: s-3;
 }
-
+ // Section class on about.html to projects.html
 .section {
   background: darken($primary-color, 4);
   padding: 0.5rem;
-  // border-bottom: $secondary-color 4px solid;
-  // border-top: $secondary-color 4px solid;
-  // border-left: $secondary-color 4px solid;
   border: $secondary-color 4px solid;
 }
 
+// Sticky footer using the calc() function
 #main-footer {
   text-align: center;
   padding: .5rem;
