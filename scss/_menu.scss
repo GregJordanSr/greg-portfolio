@@ -29,9 +29,10 @@
                 background: $secondary-color;
             }
 
-            // Line 2 - Hide
+            // Line 2 - Keep straight and push down a little
             &:nth-child(2) {
-                opacity: 0;
+                transform: rotate(0deg) translate(-1px, -1px);
+                background: $secondary-color;
             }
 
             // Line 3 - Rotate
@@ -42,6 +43,8 @@
         }
     }
 }
+
+// Menu
 
 .menu {
     position: fixed;
@@ -120,7 +123,7 @@
         display: inline-block;
         position: relative;
         font-style: italic;
-        // font-size: 19px;
+        font-size: 1.5rem;
         padding: 1rem, 0;
         font-weight: 300;
         color: text-color($primary-color);
@@ -134,7 +137,7 @@
     }
 }
 
-// Delay each nav item slide by 0.1s
+// Sass function to delay each nav item slide by 0.1s
 @for $x from 1 through 5 {
     .nav-item:nth-child(#{$x}) {
         transition-delay: $x * 0.1s;
